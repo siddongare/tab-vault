@@ -1,0 +1,23 @@
+# Operating system files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor / IDE configuration
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Package / archive artifacts
+*.zip
+*.crx
+*.pem
+*.rar
+*.7z
+*.tar.gz
+
+# Logs and temporary files
+*.log
+*.tmp
