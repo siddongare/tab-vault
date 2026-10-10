@@ -1,6 +1,7 @@
 I built Tab Vault for my own use as a personal browser extension.
 
-<!-- TODO: Add screenshots here -->
+![Tab Vault Overview](screenshots/vault-overview.png)
+![Tab Vault Expanded](screenshots/vault-expanded.png)
 
 ## What it does
 
@@ -48,7 +49,7 @@ Tab Vault is designed with local-first storage, but you should be aware of the f
 - Local storage: Tab Vault stores tab titles and URLs in the browser's local extension storage (`chrome.storage.local`) on your device.
 - Incognito privacy: If you use the extension in an incognito window, the titles and URLs of your incognito tabs are written to the browser's persistent local extension storage on disk. This weakens incognito privacy because those browsing records persist after the incognito window is closed.
 - No remote telemetry: Tab Vault does not transmit your tab lists, URLs, or sessions to any server or remote service.
-- Favicon lookups: When displaying site icons in the popup interface, Tab Vault uses the icon URL provided by the browser if available. If that icon URL is missing or points to a browser internal scheme, Tab Vault requests the icon from Google's public favicon service (`https://www.google.com/s2/favicons?domain=...`). This request transmits the domain name (not the full URL path) to Google servers, which reveals to Google which website domains you have saved.
+- Favicon lookups: When displaying site icons in the popup interface, Tab Vault uses the icon URL provided by the browser if available. These icons are loaded from the websites themselves each time the popup opens. If that icon URL is missing or points to a browser internal scheme, Tab Vault requests the icon from Google's public favicon service (`https://www.google.com/s2/favicons?domain=...`). This request transmits the domain name (not the full URL path) to Google servers, which reveals to Google which website domains you have saved.
 
 ## Limitations
 
